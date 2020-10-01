@@ -1,2 +1,5 @@
-# Google App Engine generated folder
-appengine-generated/
+node_modules/
+
+package-lock.json
+package.json
+run_sass.sh
