@@ -1,0 +1,650 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+main {
+  margin: 0;
+  padding: 0; }
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+input,
+button {
+  outline: none; }
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Rajdhani", sans-serif; }
+
+a {
+  font-family: "Rajdhani", sans-serif; }
+
+.flex {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.j-c-center {
+  justify-content: center;
+  align-items: center; }
+
+.j-c-end {
+  justify-content: end; }
+
+.j-c-space-between {
+  justify-content: space-between; }
+
+.hide {
+  display: none; }
+
+.open_menu {
+  display: block;
+  transition: all 0.5s ease-in-out;
+  animation: slide_in_from_rigth 0.5s forwards; }
+
+.close_menu {
+  transition: all 0.5s ease-in-out;
+  animation: slide_out_to_right 0.5s forwards; }
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+  @media (max-width: 420px) {
+    .container {
+      width: 100%; } }
+  @media (max-width: 576px) {
+    .container {
+      width: 100%;
+      padding: 0 !important; } }
+  @media (max-width: 812px) {
+    .container {
+      width: 100%;
+      padding: 0 20px; } }
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 923px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }
+
+@keyframes slide_in_from_rigth {
+  from {
+    right: -100%; }
+  to {
+    right: 0%; } }
+@keyframes slide_out_to_right {
+  from {
+    right: 0%; }
+  to {
+    right: -100%;
+    display: none; } }
+.nav-bar .nav-bar-sub-links {
+  padding: 3px 15px;
+  background-color: #131313;
+  color: #9b9b9b;
+  box-sizing: content-box; }
+  @media (max-width: 785px) {
+    .nav-bar .nav-bar-sub-links {
+      display: none; } }
+  .nav-bar .nav-bar-sub-links a {
+    color: #9b9b9b;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 15px; }
+    .nav-bar .nav-bar-sub-links a:hover {
+      color: white; }
+  @media (max-width: 812px) {
+    .nav-bar .nav-bar-sub-links .left {
+      margin-left: 100px; } }
+  @media (max-width: 812px) {
+    .nav-bar .nav-bar-sub-links .right {
+      display: none; } }
+.nav-bar .nav-bar-menu {
+  background-color: #fdfdfd;
+  border-bottom: 0.5px solid #d6d6d6;
+  padding: 0 10px 0 0;
+  height: 55px; }
+  .nav-bar .nav-bar-menu .logo {
+    background-color: #131313;
+    width: 120px;
+    display: none;
+    height: 55px; }
+    @media (max-width: 812px) {
+      .nav-bar .nav-bar-menu .logo {
+        display: flex; } }
+  .nav-bar .nav-bar-menu .left {
+    padding: 0 0 0 10px;
+    border-left: 0.3px solid #d6d6d6; }
+  .nav-bar .nav-bar-menu .menu-links {
+    padding-left: 10px;
+    flex-grow: 5; }
+    .nav-bar .nav-bar-menu .menu-links a {
+      text-transform: uppercase;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #9b9b9b;
+      transition: all 0.5s ease-in-out; }
+      .nav-bar .nav-bar-menu .menu-links a:hover {
+        color: #131313; }
+    @media (max-width: 785px) {
+      .nav-bar .nav-bar-menu .menu-links {
+        display: none; } }
+  .nav-bar .nav-bar-menu button {
+    background-color: #fdfdfd;
+    border: 0;
+    color: #9b9b9b;
+    font-size: 20px;
+    padding: 10px; }
+  .nav-bar .nav-bar-menu span {
+    margin: 0 6px;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif; }
+  .nav-bar .nav-bar-menu .tnw-2020 span:nth-of-type(1) {
+    font-size: 20px; }
+  .nav-bar .nav-bar-menu .tnw-2020 span:nth-of-type(2) {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #9b9b9b; }
+  .nav-bar .nav-bar-menu .tnw-2020 img {
+    height: 14px; }
+  @media (max-width: 1200px) {
+    .nav-bar .nav-bar-menu .tnw-2020 {
+      display: none; } }
+  .nav-bar .nav-bar-menu .search i {
+    font-size: 17px; }
+  .nav-bar .nav-bar-menu .get-ticket-btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #00dada;
+    color: #fdfdfd;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 6px 20px;
+    transition: all 0.3s ease-in-out; }
+    @media (max-width: 1200px) {
+      .nav-bar .nav-bar-menu .get-ticket-btn {
+        display: none; } }
+    .nav-bar .nav-bar-menu .get-ticket-btn:hover {
+      background-color: #90cc; }
+  .nav-bar .nav-bar-menu .menu-btn {
+    display: none;
+    color: #f42; }
+    @media (max-width: 785px) {
+      .nav-bar .nav-bar-menu .menu-btn {
+        display: block; } }
+.nav-bar .sm-screen-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  right: -100%;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  z-index: 900; }
+  .nav-bar .sm-screen-menu .header {
+    border-bottom: 1px solid #d6d6d6;
+    height: 50px;
+    align-items: center;
+    padding-right: 15px;
+    justify-content: flex-end; }
+    .nav-bar .sm-screen-menu .header .close {
+      color: #fdfdfd;
+      background-color: transparent;
+      border: 0;
+      font-size: 20px; }
+  .nav-bar .sm-screen-menu .social {
+    border-bottom: 1px solid #d6d6d6;
+    min-height: 70px;
+    align-items: center;
+    padding: 0 20px; }
+    .nav-bar .sm-screen-menu .social ul li {
+      margin: 20px;
+      float: left; }
+      .nav-bar .sm-screen-menu .social ul li .link_social {
+        color: #fdfdfd;
+        font-size: 20px; }
+  .nav-bar .sm-screen-menu .links {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px 30px; }
+    .nav-bar .sm-screen-menu .links .title {
+      color: #fdfdfd;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 15px;
+      text-transform: uppercase; }
+    .nav-bar .sm-screen-menu .links ul {
+      margin: 10px 0 20px 0; }
+    .nav-bar .sm-screen-menu .links .link {
+      color: #d6d6d6;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-family: "Rajdhani", sans-serif;
+      line-height: 20px; }
+.nav-bar .nav-bar-status {
+  background-color: #fd3;
+  padding: 5px 20px;
+  font-size: 14px; }
+  @media (max-width: 576px) {
+    .nav-bar .nav-bar-status {
+      text-align: center;
+      padding: 20px 0; } }
+  .nav-bar .nav-bar-status .join-online {
+    color: #272727; }
+
+.banner {
+  clear: both;
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: 65% 35%; }
+  @media (max-width: 785px) {
+    .banner {
+      grid-template-columns: 100%; } }
+  .banner .artile-link {
+    width: 98%;
+    height: 100%;
+    z-index: 9;
+    position: absolute; }
+  .banner .main-article {
+    position: relative;
+    padding: 5px;
+    height: 70vh;
+    background-size: cover;
+    background-position: "bottom right, right";
+    background-clip: content-box;
+    background-repeat: "no-repeat, no-repeat";
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.666), black), linear-gradient(to bottom right, rgba(255, 67, 34, 0.612) 50%, black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sick-leave-employee-wfh-gq-796x417.png"); }
+    @media (max-width: 1200px) {
+      .banner .main-article {
+        height: 70vh; } }
+    @media (max-width: 812px) {
+      .banner .main-article {
+        height: 400px; } }
+    @media (max-width: 785px) {
+      .banner .main-article {
+        height: 35vh; } }
+    .banner .main-article .logo {
+      position: absolute;
+      width: 400px;
+      top: 30px;
+      left: 30px; }
+      @media (max-width: 1200px) {
+        .banner .main-article .logo {
+          display: none; } }
+    .banner .main-article .header {
+      width: 80%;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      z-index: 31; }
+      .banner .main-article .header > span {
+        color: #fdfdfd;
+        text-transform: uppercase;
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 500; }
+      .banner .main-article .header h1 {
+        color: #fdfdfd;
+        font-family: "Balsamiq Sans", cursive, sans-serif;
+        font-size: 55px;
+        margin: 0 0 10px 0;
+        font-weight: 900; }
+        @media (max-width: 812px) {
+          .banner .main-article .header h1 {
+            font-size: 35px; } }
+        @media (max-width: 785px) {
+          .banner .main-article .header h1 {
+            font-size: 20px; } }
+      .banner .main-article .header .actions {
+        align-items: center; }
+        .banner .main-article .header .actions a {
+          text-decoration: none;
+          color: #9b9b9b; }
+        .banner .main-article .header .actions span {
+          color: #9b9b9b;
+          margin-left: 10px;
+          font-size: 14px;
+          align-items: center; }
+    .banner .main-article .date {
+      color: #fdfdfd;
+      font-size: 20px;
+      font-family: "Rajdhani", sans-serif;
+      right: 30px;
+      top: 20px;
+      z-index: 30;
+      position: absolute; }
+      @media (max-width: 812px) {
+        .banner .main-article .date {
+          display: none; } }
+  .banner .article-banner {
+    padding: 5px;
+    position: relative;
+    height: 35vh; }
+    @media (max-width: 812px) {
+      .banner .article-banner {
+        height: 200px; } }
+    .banner .article-banner .header {
+      width: 80%;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      z-index: 30; }
+      .banner .article-banner .header .title {
+        color: #fdfdfd;
+        text-transform: uppercase;
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 500; }
+      .banner .article-banner .header h1 {
+        color: #fdfdfd;
+        font-family: "Balsamiq Sans", cursive, sans-serif;
+        font-size: 20px;
+        margin: 0 0 10px 0;
+        font-weight: 900; }
+        @media (max-width: 812px) {
+          .banner .article-banner .header h1 {
+            font-size: 20px; } }
+      .banner .article-banner .header .actions {
+        align-items: center; }
+        .banner .article-banner .header .actions a {
+          text-decoration: none;
+          color: #9b9b9b; }
+        .banner .article-banner .header .actions span {
+          color: #9b9b9b;
+          margin-left: 10px;
+          font-size: 14px;
+          align-items: center; }
+    .banner .article-banner:nth-of-type(1) {
+      background-size: cover;
+      background-position: "bottom right, right";
+      background-clip: content-box;
+      background-repeat: "no-repeat, no-repeat";
+      box-sizing: border-box;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.666), black), linear-gradient(to bottom right, rgba(0, 0, 0, 0.265) 50%, black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-01.jpg"); }
+    .banner .article-banner:nth-of-type(2) {
+      background-size: cover;
+      background-position: "bottom right, right";
+      background-clip: content-box;
+      background-repeat: "no-repeat, no-repeat";
+      box-sizing: border-box;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.666), black), linear-gradient(to bottom right, rgba(0, 0, 0, 0.265) 50%, black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-796x422.png"); }
+
+.lastest-news {
+  padding-top: 50px; }
+  .lastest-news .header {
+    margin: 0 0 20px 15px; }
+    .lastest-news .header a {
+      align-items: center;
+      font-size: 15px;
+      color: #f42;
+      font-family: "Balsamiq Sans", cursive, sans-serif;
+      transition: all 0.3s ease-in-out; }
+      .lastest-news .header a i {
+        font-size: 22px;
+        margin-left: 10px; }
+      .lastest-news .header a:hover {
+        color: #131313; }
+    .lastest-news .header h2 {
+      margin: 0;
+      padding: 0; }
+  .lastest-news .news-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    .lastest-news .news-list .item {
+      padding: 15px;
+      box-sizing: border-box; }
+      .lastest-news .news-list .item img {
+        width: 100%; }
+        @media (max-width: 785px) {
+          .lastest-news .news-list .item img {
+            width: 100px; } }
+      .lastest-news .news-list .item .title {
+        color: #272727;
+        font-size: 11px;
+        font-weight: 600;
+        font-family: "Balsamiq Sans", cursive, sans-serif; }
+        @media (max-width: 785px) {
+          .lastest-news .news-list .item .title h2 {
+            margin: 0 10px; } }
+        @media (max-width: 576px) {
+          .lastest-news .news-list .item .title h2 {
+            font-size: 13px; } }
+      .lastest-news .news-list .item .info span {
+        font-family: "Rajdhani", sans-serif;
+        color: #9b9b9b; }
+        @media (max-width: 785px) {
+          .lastest-news .news-list .item .info span {
+            margin: 0 10px; } }
+        @media (max-width: 576px) {
+          .lastest-news .news-list .item .info span {
+            font-size: 10px; } }
+      @media (max-width: 785px) {
+        .lastest-news .news-list .item {
+          display: flex; } }
+    @media (max-width: 1200px) {
+      .lastest-news .news-list {
+        grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 785px) {
+      .lastest-news .news-list {
+        grid-template-columns: repeat(1, 1fr); } }
+    @media (max-width: 576px) {
+      .lastest-news .news-list {
+        grid-template-columns: repeat(1, 1fr); } }
+
+.latest-funding {
+  margin-top: 30px; }
+  .latest-funding .header {
+    margin: 0 0 20px 15px;
+    align-items: center; }
+    .latest-funding .header a {
+      align-items: center;
+      font-size: 15px;
+      color: #f42;
+      font-family: "Balsamiq Sans", cursive, sans-serif;
+      transition: all 0.3s ease-in-out; }
+      .latest-funding .header a i {
+        font-size: 22px;
+        margin-left: 10px; }
+      .latest-funding .header a:hover {
+        color: #131313; }
+    .latest-funding .header ul .link {
+      font-size: 13px;
+      padding: 0 10px; }
+    .latest-funding .header ul li:nth-of-type(1) .link, .latest-funding .header ul li:nth-of-type(2) .link {
+      border-right: 2px solid #f42; }
+    .latest-funding .header h2 {
+      margin: 0;
+      padding: 0; }
+  .latest-funding .fundings-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    .latest-funding .fundings-list .item {
+      position: relative;
+      padding: 15px;
+      box-sizing: border-box; }
+      .latest-funding .fundings-list .item .hd .logo {
+        position: absolute;
+        width: 70px;
+        top: 25px;
+        left: 25px; }
+      .latest-funding .fundings-list .item .hd .title {
+        border: 1px solid transparent;
+        background-color: #f42; }
+        .latest-funding .fundings-list .item .hd .title h2 {
+          font-size: 15px;
+          color: #fdfdfd;
+          font-family: "Balsamiq Sans", cursive, sans-serif;
+          padding-left: 90px; }
+      .latest-funding .fundings-list .item .hd .in {
+        padding-left: 90px;
+        background-color: #ffebe8; }
+        .latest-funding .fundings-list .item .hd .in .link {
+          display: flex;
+          flex-direction: column;
+          padding: 10px 0; }
+          .latest-funding .fundings-list .item .hd .in .link span:nth-of-type(1) {
+            font-weight: bold;
+            color: #131313;
+            font-size: 20px; }
+          .latest-funding .fundings-list .item .hd .in .link span:nth-of-type(2) {
+            font-weight: bold;
+            color: #9b9b9b;
+            font-size: 12px; }
+      .latest-funding .fundings-list .item .actions {
+        padding: 15px;
+        background-color: #fffaf8;
+        border-bottom: 1px solid #ffebe8; }
+        .latest-funding .fundings-list .item .actions li {
+          padding: 2px 0; }
+        .latest-funding .fundings-list .item .actions a {
+          font-size: 13px;
+          color: #272727; }
+          .latest-funding .fundings-list .item .actions a:hover {
+            color: #9b9b9b; }
+      .latest-funding .fundings-list .item .info {
+        background-color: #fffaf8;
+        padding: 15px; }
+        .latest-funding .fundings-list .item .info .link-1 {
+          font-size: 12px;
+          color: #272727; }
+          .latest-funding .fundings-list .item .info .link-1:hover {
+            color: #9b9b9b; }
+    @media (max-width: 1200px) {
+      .latest-funding .fundings-list {
+        grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 785px) {
+      .latest-funding .fundings-list {
+        grid-template-columns: repeat(1, 1fr); } }
+    @media (max-width: 576px) {
+      .latest-funding .fundings-list {
+        grid-template-columns: repeat(1, 1fr); } }
+
+.orthers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px; }
+  @media (max-width: 785px) {
+    .orthers {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 576px) {
+    .orthers {
+      grid-template-columns: repeat(1, 1fr); } }
+  .orthers .item {
+    padding: 10px;
+    box-sizing: border-box; }
+    .orthers .item .header-sec {
+      align-items: center; }
+      .orthers .item .header-sec a {
+        align-items: center;
+        font-size: 15px;
+        color: #f42;
+        font-family: "Balsamiq Sans", cursive, sans-serif;
+        transition: all 0.3s ease-in-out; }
+        .orthers .item .header-sec a i {
+          font-size: 22px;
+          margin-left: 10px; }
+        .orthers .item .header-sec a:hover {
+          color: #131313; }
+      .orthers .item .header-sec ul .link {
+        font-size: 13px;
+        padding: 0 10px; }
+      .orthers .item .header-sec ul li:nth-of-type(1) .link, .orthers .item .header-sec ul li:nth-of-type(2) .link {
+        border-right: 2px solid #f42; }
+      .orthers .item .header-sec h2 {
+        margin: 0;
+        padding: 0; }
+  .orthers .most-popular {
+    padding: 0;
+    position: relative;
+    height: 35vh;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: "bottom right, right";
+    background-clip: content-box;
+    background-repeat: "no-repeat, no-repeat";
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.666), black), linear-gradient(to bottom right, rgba(0, 0, 0, 0.265) 50%, black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-01.jpg"); }
+    @media (max-width: 812px) {
+      .orthers .most-popular {
+        height: 200px; } }
+    .orthers .most-popular .header {
+      width: 80%;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      z-index: 30; }
+      .orthers .most-popular .header .title {
+        color: #fdfdfd;
+        text-transform: uppercase;
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 500; }
+      .orthers .most-popular .header h1 {
+        color: #fdfdfd;
+        font-family: "Balsamiq Sans", cursive, sans-serif;
+        font-size: 20px;
+        margin: 0 0 10px 0;
+        font-weight: 900; }
+        @media (max-width: 812px) {
+          .orthers .most-popular .header h1 {
+            font-size: 20px; } }
+      .orthers .most-popular .header .actions {
+        align-items: center; }
+        .orthers .most-popular .header .actions a {
+          text-decoration: none;
+          color: #9b9b9b; }
+        .orthers .most-popular .header .actions span {
+          color: #9b9b9b;
+          margin-left: 10px;
+          font-size: 14px;
+          align-items: center; }
+  .orthers .latest {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 10px 0 0 10px;
+    background-color: #ffebe8;
+    box-sizing: border-box; }
+    .orthers .latest .left {
+      display: flex;
+      flex-direction: column; }
+      .orthers .latest .left .title {
+        font-size: 15px;
+        font-family: "Rajdhani", sans-serif;
+        color: #f42; }
+      .orthers .latest .left .link-a {
+        font-family: "Balsamiq Sans", cursive, sans-serif;
+        font-size: 13px;
+        color: #f42;
+        margin-top: 10px; }
+    .orthers .latest .right {
+      position: relative; }
+      .orthers .latest .right .image {
+        position: relative;
+        float: right;
+        right: 0;
+        width: 90px;
+        object-fit: cover;
+        height: 90px; }
+  .orthers .more {
+    position: relative; }
+    .orthers .more .more-l {
+      position: relative;
+      margin-left: 20px;
+      width: 94%; }
+      .orthers .more .more-l .li-more {
+        color: #f42;
+        list-style: disc !important;
+        list-style-position: inherit !important;
+        margin: 10px 0;
+        padding-bottom: 10px;
+        border-bottom: 0.2px solid #d6d6d6; }
+        .orthers .more .more-l .li-more .link-more {
+          color: #5b5b5b;
+          font-size: 14px; }
+
+/*# sourceMappingURL=style.css.map */

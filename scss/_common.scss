@@ -1,0 +1,98 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: $font_1;
+}
+
+a {
+  font-family: $font_1;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.j-c-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.j-c-end {
+  justify-content: end;
+}
+
+.j-c-space-between {
+  justify-content: space-between;
+}
+
+.hide {
+  display: none;
+}
+
+.open_menu {
+  display: block;
+  transition: all 0.5s ease-in-out;
+  animation: slide_in_from_rigth 0.5s forwards;
+}
+
+.close_menu {
+  transition: all 0.5s ease-in-out;
+  animation: slide_out_to_right 0.5s forwards;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include breakpoint($xs_screen) {
+    width: 100%;
+  }
+
+  @include breakpoint($sm_screen) {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  @include breakpoint($md_screen) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  @include breakpoint($lg_screen) {
+    max-width: 923px;
+  }
+
+  @include breakpoint($xl_screen) {
+    max-width: 1140px;
+  }
+}

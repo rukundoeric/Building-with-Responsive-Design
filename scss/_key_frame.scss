@@ -1,0 +1,20 @@
+@keyframes slide_in_from_rigth {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0%;
+  }
+}
+
+@keyframes slide_out_to_right {
+  from {
+    right: 0%;
+  }
+
+  to {
+    right: -100%;
+    display: none;
+  }
+}
