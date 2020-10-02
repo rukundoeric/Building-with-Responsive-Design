@@ -1,8 +1,8 @@
 .latest-funding {
-  margin-top: 30px;
+  margin-top: 70px;
 
   .header {
-    margin: 0 0 20px 15px;
+    margin: 0 5px 20px 15px;
     align-items: center;
 
     a {
@@ -26,6 +26,11 @@
       .link {
         font-size: 13px;
         padding: 0 10px;
+
+        @include breakpoint($tab_screen) {
+          padding: 0 10px 0 0;
+          border: 0;
+        }
       }
 
       li {
@@ -33,14 +38,32 @@
         &:nth-of-type(2) {
           .link {
             border-right: 2px solid $accent_color;
+
+            @include breakpoint($tab_screen) {
+              margin-top: 10px;
+              border: 0;
+            }
           }
         }
+
+        @include breakpoint($tab_screen) {
+          border: 0;
+        }
+      }
+
+      @include breakpoint($tab_screen) {
+        display: flex;
+        flex-direction: column;
       }
     }
 
     h2 {
       margin: 0;
       padding: 0;
+    }
+
+    @include breakpoint($tab_screen) {
+      display: block;
     }
   }
 
@@ -70,6 +93,17 @@
             color: $white_color;
             font-family: $font_2;
             padding-left: 90px;
+
+            h2 {
+              @include breakpoint($tab_screen) {
+                margin: 0 10px;
+                font-size: 15px;
+              }
+
+              @include breakpoint($sm_screen) {
+                font-size: 13px;
+              }
+            }
           }
         }
 

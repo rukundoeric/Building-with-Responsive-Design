@@ -108,7 +108,10 @@
           </div>
         </div>
       </div>
-      <div class="nav-bar-sub-links flex j-c-space-between">
+      <div
+        id="nav_bar_sub_links"
+        class="nav-bar-sub-links flex j-c-space-between"
+      >
         <ul class="flex left">
           <li><a href="#">News</a></li>
           <li><a href="#">Events</a></li>
@@ -124,41 +127,43 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="nav-bar-menu flex j-c-space-between">
-        <div class="flex">
-          <div class="logo flex j-c-center">
-            <img src="./img/logo_white.svg" alt="logo" />
+      <div id="nav_bar_menu">
+        <div class="nav-bar-menu flex j-c-space-between">
+          <div class="flex">
+            <div id="ntw_logo" class="logo flex j-c-center">
+              <img src="./img/logo_white.svg" alt="logo" />
+            </div>
+            <ul class="flex menu-links j-c-center">
+              <li><a href="#">Latest</a></li>
+              <li><a href="#">Hard Fork</a></li>
+              <li><a href="#">Plugged</a></li>
+              <li><a href="#">Readme</a></li>
+              <li><a href="#">Grouth Quaters</a></li>
+              <li><a href="#">Shift</a></li>
+              <li><a href="#">Neural</a></li>
+            </ul>
           </div>
-          <ul class="flex menu-links j-c-center">
-            <li><a href="#">Latest</a></li>
-            <li><a href="#">Hard Fork</a></li>
-            <li><a href="#">Plugged</a></li>
-            <li><a href="#">Readme</a></li>
-            <li><a href="#">Grouth Quaters</a></li>
-            <li><a href="#">Shift</a></li>
-            <li><a href="#">Neural</a></li>
-          </ul>
-        </div>
-        <div class="flex j-c-center left">
-          <button type="button" class="search">
-            <i class="fas fa-search"></i>
-          </button>
-          <div class="tnw-2020 flex j-c-center">
-            <span class="flex j-c-center"
-              ><img src="./img/logo_black.svg" alt="logo" />&nbsp;2020</span
-            >
-            <span>IS HAPPENING NOW</span>
+          <div class="flex j-c-center left">
+            <button type="button" class="search">
+              <i class="fas fa-search"></i>
+            </button>
+            <div class="tnw-2020 flex j-c-center">
+              <span class="flex j-c-center"
+                ><img src="./img/logo_black.svg" alt="logo" />&nbsp;2020</span
+              >
+              <span>IS HAPPENING NOW</span>
+            </div>
+            <a href="#" class="get-ticket-btn">Get Tickets</a>
+            <button id="open-menu-btn" type="button" class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </button>
           </div>
-          <a href="#" class="get-ticket-btn">Get Tickets</a>
-          <button id="open-menu-btn" type="button" class="menu-btn">
-            <i class="fas fa-bars"></i>
-          </button>
         </div>
-      </div>
-      <div class="nav-bar-status">
-        <a class="join-online" href="#"
-          >TNW2020 is happening now! Join online →
-        </a>
+        <div class="nav-bar-status">
+          <a class="join-online" href="#"
+            >TNW2020 is happening now! Join online →
+          </a>
+        </div>
       </div>
     </nav>
     <main class="main-section">
@@ -542,40 +547,72 @@
             </div>
             <div class="most-popular">
               <a class="artile-link" href="#"></a>
-                <div class="header">
-                  <span class="title">Most popular</span>
-                  <a href="#">
-                    <h1>
-                      Google Maps adds new AR tools to help you get around town
-                    </h1></a
+              <div class="header">
+                <span class="title">Most popular</span>
+                <a href="#">
+                  <h1>
+                    Google Maps adds new AR tools to help you get around town
+                  </h1></a
+                >
+                <div class="actions flex">
+                  <a href="#">by Napiz Lopez</a>
+                  <span class="time_ago flex"
+                    ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
                   >
-                  <div class="actions flex">
-                    <a href="#">by Napiz Lopez</a>
-                    <span class="time_ago flex"
-                      ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
-                    >
-                  </div>
                 </div>
+              </div>
             </div>
             <div class="latest">
               <div class="left">
                 <span class="title">LATEST</span>
-                <a class="link-a" href="#">Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’</a>
+                <a class="link-a" href="#"
+                  >Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable
+                  than Bitcoin miners in September’</a
+                >
               </div>
               <div class="right">
                 <a href="#">
-                  <img class="image" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg" alt="">
+                  <img
+                    class="image"
+                    src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div class="more">
               <ul class="more-l">
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-               </ul>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+              </ul>
             </div>
           </article>
           <article class="item">
@@ -587,40 +624,72 @@
             </div>
             <div class="most-popular">
               <a class="artile-link" href="#"></a>
-                <div class="header">
-                  <span class="title">Most popular</span>
-                  <a href="#">
-                    <h1>
-                      Google Maps adds new AR tools to help you get around town
-                    </h1></a
+              <div class="header">
+                <span class="title">Most popular</span>
+                <a href="#">
+                  <h1>
+                    Google Maps adds new AR tools to help you get around town
+                  </h1></a
+                >
+                <div class="actions flex">
+                  <a href="#">by Napiz Lopez</a>
+                  <span class="time_ago flex"
+                    ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
                   >
-                  <div class="actions flex">
-                    <a href="#">by Napiz Lopez</a>
-                    <span class="time_ago flex"
-                      ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
-                    >
-                  </div>
                 </div>
+              </div>
             </div>
             <div class="latest">
               <div class="left">
                 <span class="title">LATEST</span>
-                <a class="link-a" href="#">Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’</a>
+                <a class="link-a" href="#"
+                  >Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable
+                  than Bitcoin miners in September’</a
+                >
               </div>
               <div class="right">
                 <a href="#">
-                  <img class="image" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg" alt="">
+                  <img
+                    class="image"
+                    src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div class="more">
               <ul class="more-l">
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-               </ul>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+              </ul>
             </div>
           </article>
           <article class="item">
@@ -632,40 +701,72 @@
             </div>
             <div class="most-popular">
               <a class="artile-link" href="#"></a>
-                <div class="header">
-                  <span class="title">Most popular</span>
-                  <a href="#">
-                    <h1>
-                      Google Maps adds new AR tools to help you get around town
-                    </h1></a
+              <div class="header">
+                <span class="title">Most popular</span>
+                <a href="#">
+                  <h1>
+                    Google Maps adds new AR tools to help you get around town
+                  </h1></a
+                >
+                <div class="actions flex">
+                  <a href="#">by Napiz Lopez</a>
+                  <span class="time_ago flex"
+                    ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
                   >
-                  <div class="actions flex">
-                    <a href="#">by Napiz Lopez</a>
-                    <span class="time_ago flex"
-                      ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
-                    >
-                  </div>
                 </div>
+              </div>
             </div>
             <div class="latest">
               <div class="left">
                 <span class="title">LATEST</span>
-                <a class="link-a" href="#">Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’</a>
+                <a class="link-a" href="#"
+                  >Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable
+                  than Bitcoin miners in September’</a
+                >
               </div>
               <div class="right">
                 <a href="#">
-                  <img class="image" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg" alt="">
+                  <img
+                    class="image"
+                    src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div class="more">
               <ul class="more-l">
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-               </ul>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+              </ul>
             </div>
           </article>
           <article class="item">
@@ -677,40 +778,72 @@
             </div>
             <div class="most-popular">
               <a class="artile-link" href="#"></a>
-                <div class="header">
-                  <span class="title">Most popular</span>
-                  <a href="#">
-                    <h1>
-                      Google Maps adds new AR tools to help you get around town
-                    </h1></a
+              <div class="header">
+                <span class="title">Most popular</span>
+                <a href="#">
+                  <h1>
+                    Google Maps adds new AR tools to help you get around town
+                  </h1></a
+                >
+                <div class="actions flex">
+                  <a href="#">by Napiz Lopez</a>
+                  <span class="time_ago flex"
+                    ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
                   >
-                  <div class="actions flex">
-                    <a href="#">by Napiz Lopez</a>
-                    <span class="time_ago flex"
-                      ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
-                    >
-                  </div>
                 </div>
+              </div>
             </div>
             <div class="latest">
               <div class="left">
                 <span class="title">LATEST</span>
-                <a class="link-a" href="#">Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’</a>
+                <a class="link-a" href="#"
+                  >Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable
+                  than Bitcoin miners in September’</a
+                >
               </div>
               <div class="right">
                 <a href="#">
-                  <img class="image" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg" alt="">
+                  <img
+                    class="image"
+                    src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div class="more">
               <ul class="more-l">
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-               </ul>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+              </ul>
             </div>
           </article>
           <article class="item">
@@ -722,40 +855,72 @@
             </div>
             <div class="most-popular">
               <a class="artile-link" href="#"></a>
-                <div class="header">
-                  <span class="title">Most popular</span>
-                  <a href="#">
-                    <h1>
-                      Google Maps adds new AR tools to help you get around town
-                    </h1></a
+              <div class="header">
+                <span class="title">Most popular</span>
+                <a href="#">
+                  <h1>
+                    Google Maps adds new AR tools to help you get around town
+                  </h1></a
+                >
+                <div class="actions flex">
+                  <a href="#">by Napiz Lopez</a>
+                  <span class="time_ago flex"
+                    ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
                   >
-                  <div class="actions flex">
-                    <a href="#">by Napiz Lopez</a>
-                    <span class="time_ago flex"
-                      ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
-                    >
-                  </div>
                 </div>
+              </div>
             </div>
             <div class="latest">
               <div class="left">
                 <span class="title">LATEST</span>
-                <a class="link-a" href="#">Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’</a>
+                <a class="link-a" href="#"
+                  >Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable
+                  than Bitcoin miners in September’</a
+                >
               </div>
               <div class="right">
                 <a href="#">
-                  <img class="image" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg" alt="">
+                  <img
+                    class="image"
+                    src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div class="more">
               <ul class="more-l">
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-               </ul>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+              </ul>
             </div>
           </article>
           <article class="item">
@@ -767,40 +932,72 @@
             </div>
             <div class="most-popular">
               <a class="artile-link" href="#"></a>
-                <div class="header">
-                  <span class="title">Most popular</span>
-                  <a href="#">
-                    <h1>
-                      Google Maps adds new AR tools to help you get around town
-                    </h1></a
+              <div class="header">
+                <span class="title">Most popular</span>
+                <a href="#">
+                  <h1>
+                    Google Maps adds new AR tools to help you get around town
+                  </h1></a
+                >
+                <div class="actions flex">
+                  <a href="#">by Napiz Lopez</a>
+                  <span class="time_ago flex"
+                    ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
                   >
-                  <div class="actions flex">
-                    <a href="#">by Napiz Lopez</a>
-                    <span class="time_ago flex"
-                      ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
-                    >
-                  </div>
                 </div>
+              </div>
             </div>
             <div class="latest">
               <div class="left">
                 <span class="title">LATEST</span>
-                <a class="link-a" href="#">Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’</a>
+                <a class="link-a" href="#"
+                  >Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable
+                  than Bitcoin miners in September’</a
+                >
               </div>
               <div class="right">
                 <a href="#">
-                  <img class="image" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg" alt="">
+                  <img
+                    class="image"
+                    src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div class="more">
               <ul class="more-l">
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-               </ul>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+              </ul>
             </div>
           </article>
           <article class="item">
@@ -812,40 +1009,72 @@
             </div>
             <div class="most-popular">
               <a class="artile-link" href="#"></a>
-                <div class="header">
-                  <span class="title">Most popular</span>
-                  <a href="#">
-                    <h1>
-                      Google Maps adds new AR tools to help you get around town
-                    </h1></a
+              <div class="header">
+                <span class="title">Most popular</span>
+                <a href="#">
+                  <h1>
+                    Google Maps adds new AR tools to help you get around town
+                  </h1></a
+                >
+                <div class="actions flex">
+                  <a href="#">by Napiz Lopez</a>
+                  <span class="time_ago flex"
+                    ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
                   >
-                  <div class="actions flex">
-                    <a href="#">by Napiz Lopez</a>
-                    <span class="time_ago flex"
-                      ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
-                    >
-                  </div>
                 </div>
+              </div>
             </div>
             <div class="latest">
               <div class="left">
                 <span class="title">LATEST</span>
-                <a class="link-a" href="#">Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’</a>
+                <a class="link-a" href="#"
+                  >Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable
+                  than Bitcoin miners in September’</a
+                >
               </div>
               <div class="right">
                 <a href="#">
-                  <img class="image" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg" alt="">
+                  <img
+                    class="image"
+                    src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div class="more">
               <ul class="more-l">
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-               </ul>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+              </ul>
             </div>
           </article>
           <article class="item">
@@ -857,40 +1086,72 @@
             </div>
             <div class="most-popular">
               <a class="artile-link" href="#"></a>
-                <div class="header">
-                  <span class="title">Most popular</span>
-                  <a href="#">
-                    <h1>
-                      Google Maps adds new AR tools to help you get around town
-                    </h1></a
+              <div class="header">
+                <span class="title">Most popular</span>
+                <a href="#">
+                  <h1>
+                    Google Maps adds new AR tools to help you get around town
+                  </h1></a
+                >
+                <div class="actions flex">
+                  <a href="#">by Napiz Lopez</a>
+                  <span class="time_ago flex"
+                    ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
                   >
-                  <div class="actions flex">
-                    <a href="#">by Napiz Lopez</a>
-                    <span class="time_ago flex"
-                      ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
-                    >
-                  </div>
                 </div>
+              </div>
             </div>
             <div class="latest">
               <div class="left">
                 <span class="title">LATEST</span>
-                <a class="link-a" href="#">Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’</a>
+                <a class="link-a" href="#"
+                  >Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable
+                  than Bitcoin miners in September’</a
+                >
               </div>
               <div class="right">
                 <a href="#">
-                  <img class="image" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg" alt="">
+                  <img
+                    class="image"
+                    src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div class="more">
               <ul class="more-l">
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-               </ul>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+              </ul>
             </div>
           </article>
           <article class="item">
@@ -902,45 +1163,348 @@
             </div>
             <div class="most-popular">
               <a class="artile-link" href="#"></a>
-                <div class="header">
-                  <span class="title">Most popular</span>
-                  <a href="#">
-                    <h1>
-                      Google Maps adds new AR tools to help you get around town
-                    </h1></a
+              <div class="header">
+                <span class="title">Most popular</span>
+                <a href="#">
+                  <h1>
+                    Google Maps adds new AR tools to help you get around town
+                  </h1></a
+                >
+                <div class="actions flex">
+                  <a href="#">by Napiz Lopez</a>
+                  <span class="time_ago flex"
+                    ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
                   >
-                  <div class="actions flex">
-                    <a href="#">by Napiz Lopez</a>
-                    <span class="time_ago flex"
-                      ><i class="far fa-clock"></i>&nbsp;&nbsp;4 hour ago</span
-                    >
-                  </div>
                 </div>
+              </div>
             </div>
             <div class="latest">
               <div class="left">
                 <span class="title">LATEST</span>
-                <a class="link-a" href="#">Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’</a>
+                <a class="link-a" href="#"
+                  >Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable
+                  than Bitcoin miners in September’</a
+                >
               </div>
               <div class="right">
                 <a href="#">
-                  <img class="image" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg" alt="">
+                  <img
+                    class="image"
+                    src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
             <div class="more">
               <ul class="more-l">
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-                <li class="li-more"><a class="link-more" href="#">Mercedez-Benz’s GLE rated as Europe's safest automated vehicle</a></li>
-               </ul>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+                <li class="li-more">
+                  <a class="link-more" href="#"
+                    >Mercedez-Benz’s GLE rated as Europe's safest automated
+                    vehicle</a
+                  >
+                </li>
+              </ul>
             </div>
           </article>
         </div>
+        <section class="lastest-deals">
+          <div class="header flex j-c-space-between">
+            <a href="#" class="flex">
+              <h2>Latest Deals</h2>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="#" class="all-deals">See All Deals</a>
+          </div>
+          <div class="deals-list">
+            <article class="item">
+              <a href="#">
+                <img
+                  src="https://cdnp0.stackassets.com/26555853638e2fd67f43f50674ee943ed49f0742/store/50f1d9c7c3f0818b0138a2ebf37e0c27953f49182fc60672a1cd855d0c0d/sale_41159_primary_image.jpg"
+                  alt="article image"
+              /></a>
+              <div class="off">
+                <span>45 % OFF</span>
+              </div>
+              <div class="flex-on-change">
+                <a href="#" class="title"
+                  ><h2>
+                    The Google Cloud Certifications Practice Tests + Courses
+                    Bundle
+                  </h2></a
+                >
+                <div class="info flex">
+                  <div class="old-price">
+                    <span>$430</span>
+                    <div class="line"></div>
+                  </div>
+                  <span class="current-price">$200</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#">
+                <img
+                  src="https://cdnp0.stackassets.com/26555853638e2fd67f43f50674ee943ed49f0742/store/50f1d9c7c3f0818b0138a2ebf37e0c27953f49182fc60672a1cd855d0c0d/sale_41159_primary_image.jpg"
+                  alt="article image"
+              /></a>
+              <div class="off">
+                <span>45 % OFF</span>
+              </div>
+              <div class="flex-on-change">
+                <a href="#" class="title"
+                  ><h2>
+                    The Google Cloud Certifications Practice Tests + Courses
+                    Bundle
+                  </h2></a
+                >
+                <div class="info flex">
+                  <div class="old-price">
+                    <span>$430</span>
+                    <div class="line"></div>
+                  </div>
+                  <span class="current-price">$200</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#">
+                <img
+                  src="https://cdnp0.stackassets.com/26555853638e2fd67f43f50674ee943ed49f0742/store/50f1d9c7c3f0818b0138a2ebf37e0c27953f49182fc60672a1cd855d0c0d/sale_41159_primary_image.jpg"
+                  alt="article image"
+              /></a>
+              <div class="off">
+                <span>45 % OFF</span>
+              </div>
+              <div class="flex-on-change">
+                <a href="#" class="title"
+                  ><h2>
+                    The Google Cloud Certifications Practice Tests + Courses
+                    Bundle
+                  </h2></a
+                >
+                <div class="info flex">
+                  <div class="old-price">
+                    <span>$430</span>
+                    <div class="line"></div>
+                  </div>
+                  <span class="current-price">$200</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#">
+                <img
+                  src="https://cdnp0.stackassets.com/26555853638e2fd67f43f50674ee943ed49f0742/store/50f1d9c7c3f0818b0138a2ebf37e0c27953f49182fc60672a1cd855d0c0d/sale_41159_primary_image.jpg"
+                  alt="article image"
+              /></a>
+              <div class="off">
+                <span>45 % OFF</span>
+              </div>
+              <div class="flex-on-change">
+                <a href="#" class="title"
+                  ><h2>
+                    The Google Cloud Certifications Practice Tests + Courses
+                    Bundle
+                  </h2></a
+                >
+                <div class="info flex">
+                  <div class="old-price">
+                    <span>$430</span>
+                    <div class="line"></div>
+                  </div>
+                  <span class="current-price">$200</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#">
+                <img
+                  src="https://cdnp0.stackassets.com/26555853638e2fd67f43f50674ee943ed49f0742/store/50f1d9c7c3f0818b0138a2ebf37e0c27953f49182fc60672a1cd855d0c0d/sale_41159_primary_image.jpg"
+                  alt="article image"
+              /></a>
+              <div class="off">
+                <span>45 % OFF</span>
+              </div>
+              <div class="flex-on-change">
+                <a href="#" class="title"
+                  ><h2>
+                    The Google Cloud Certifications Practice Tests + Courses
+                    Bundle
+                  </h2></a
+                >
+                <div class="info flex">
+                  <div class="old-price">
+                    <span>$430</span>
+                    <div class="line"></div>
+                  </div>
+                  <span class="current-price">$200</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#">
+                <img
+                  src="https://cdnp0.stackassets.com/26555853638e2fd67f43f50674ee943ed49f0742/store/50f1d9c7c3f0818b0138a2ebf37e0c27953f49182fc60672a1cd855d0c0d/sale_41159_primary_image.jpg"
+                  alt="article image"
+              /></a>
+              <div class="off">
+                <span>45 % OFF</span>
+              </div>
+              <div class="flex-on-change">
+                <a href="#" class="title"
+                  ><h2>
+                    The Google Cloud Certifications Practice Tests + Courses
+                    Bundle
+                  </h2></a
+                >
+                <div class="info flex">
+                  <div class="old-price">
+                    <span>$430</span>
+                    <div class="line"></div>
+                  </div>
+                  <span class="current-price">$200</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#">
+                <img
+                  src="https://cdnp0.stackassets.com/26555853638e2fd67f43f50674ee943ed49f0742/store/50f1d9c7c3f0818b0138a2ebf37e0c27953f49182fc60672a1cd855d0c0d/sale_41159_primary_image.jpg"
+                  alt="article image"
+              /></a>
+              <div class="off">
+                <span>45 % OFF</span>
+              </div>
+              <div class="flex-on-change">
+                <a href="#" class="title"
+                  ><h2>
+                    The Google Cloud Certifications Practice Tests + Courses
+                    Bundle
+                  </h2></a
+                >
+                <div class="info flex">
+                  <div class="old-price">
+                    <span>$430</span>
+                    <div class="line"></div>
+                  </div>
+                  <span class="current-price">$200</span>
+                </div>
+              </div>
+            </article>
+            <article class="item">
+              <a href="#">
+                <img
+                  src="https://cdnp0.stackassets.com/26555853638e2fd67f43f50674ee943ed49f0742/store/50f1d9c7c3f0818b0138a2ebf37e0c27953f49182fc60672a1cd855d0c0d/sale_41159_primary_image.jpg"
+                  alt="article image"
+              /></a>
+              <div class="off">
+                <span>45 % OFF</span>
+              </div>
+              <div class="flex-on-change">
+                <a href="#" class="title"
+                  ><h2>
+                    The Google Cloud Certifications Practice Tests + Courses
+                    Bundle
+                  </h2></a
+                >
+                <div class="info flex">
+                  <div class="old-price">
+                    <span>$430</span>
+                    <div class="line"></div>
+                  </div>
+                  <span class="current-price">$200</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
     </main>
+    <footer>
+      <div class="social-subs">
+        <div class="social-f j-c-center">
+          <ul class="flex j-c-center">
+            <li>
+              <a class="link_social" href="#"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a class="link_social" href="#"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a class="link_social" href="#"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li>
+              <a class="link_social" href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a class="link_social" href="#"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+            </li>
+            <li>
+              <a class="link_social" href="#"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a class="link_social" href="#"><i class="fas fa-rss"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="subs flex j-c-center">
+          <ul class="flex">
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">ADVERTISE</a></li>
+            <li><a href="#">JOBS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex j-c-center info">
+        <label>
+          <a class="link-logo" href="#"
+            ><img src="./img/logo_white.svg" alt="logo"
+          /></a>
+          <span
+            >&copy; 2006–2020 The Next Web B.V. Made with 3 in Amsterdam.
+            Powered by</span
+          >
+          <a class="link-k" href="#">StackPath</a>
+        </label>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
