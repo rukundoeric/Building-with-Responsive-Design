@@ -1,0 +1,96 @@
+@mixin hide_on($screen) {
+  @if $screen == "xl_screen" {
+    @media #{$xl_screen} {
+      display: none;
+    }
+  }
+
+  @else if $screen == "big_screen" {
+    @media #{$big_screen} {
+      display: none;
+    }
+  }
+
+  @else if $screen == "lg_screen" {
+    @media #{$lg_screen} {
+      display: none;
+    }
+  }
+
+  @else if $screen == "md_screen" {
+    @media #{$md_screen} {
+      display: none;
+    }
+  }
+
+  @else if $screen == "tab_screen" {
+    @media #{$tab_screen} {
+      display: none;
+    }
+  }
+
+  @else if $screen =="sm_screen" {
+    @media #{$sm_screen} {
+      display: none;
+    }
+  }
+
+  @else if $screen == "xs_screen" {
+    @media #{$xs_screen} {
+      display: none;
+    }
+  }
+}
+
+@mixin show_on($screen) {
+  @if $screen == "xl_screen" {
+    @media #{$xl_screen} {
+      display: block;
+    }
+  }
+
+  @else if $screen == "lg_screen" {
+    @media #{$lg_screen} {
+      display: block;
+    }
+  }
+
+  @else if $screen == "md_screen" {
+    @media #{$md_screen} {
+      display: block;
+    }
+  }
+
+  @else if $screen == "tab_screen" {
+    @media #{$tab_screen} {
+      display: block;
+    }
+  }
+
+  @else if $screen =="sm_screen" {
+    @media #{$sm_screen} {
+      display: block;
+    }
+  }
+
+  @else if $screen == "xs_screen" {
+    @media #{$xs_screen} {
+      display: block;
+    }
+  }
+}
+
+@mixin breakpoint($screen) {
+  @media #{$screen} {
+    @content;
+  }
+}
+
+@mixin backgound($position, $repeat) {
+  background-size: cover;
+  background-position: $position;
+  background-clip: content-box;
+  background-repeat: $repeat;
+  box-sizing: border-box;
+  @content;
+}

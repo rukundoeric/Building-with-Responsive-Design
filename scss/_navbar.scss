@@ -1,0 +1,221 @@
+.nav-bar {
+  .nav-bar-sub-links {
+    padding: 6px 15px;
+    background-color: $black_color;
+    color: $gray_color;
+    box-sizing: content-box;
+
+    @include hide_on('tab_screen');
+
+    a {
+      color: $gray_color;
+      text-decoration: none;
+      margin: 0 5px;
+      font-size: 15px;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    .left {
+      @include breakpoint($md_screen) {
+        margin-left: 100px;
+      }
+    }
+
+    .right {
+      @include hide_on('md_screen');
+    }
+  }
+
+  .nav-bar-menu {
+    background-color: $white_color;
+    border-bottom: 0.5px solid $border_color;
+    padding: 0 10px 0 0;
+    height: 55px;
+
+    .logo {
+      background-color: $black_color;
+      width: 120px;
+      display: none;
+      height: 55px;
+
+      @include breakpoint($md_screen) {
+        display: flex;
+      }
+    }
+
+    .left {
+      padding: 0 0 0 10px;
+      border-left: 0.3px solid $border_color;
+    }
+
+    .menu-links {
+      padding-left: 10px;
+      flex-grow: 5;
+
+      a {
+        text-transform: uppercase;
+        margin: 0 10px;
+        text-decoration: none;
+        color: $gray_color;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          color: $black_color;
+        }
+      }
+
+      @include hide_on('tab_screen');
+    }
+
+    button {
+      background-color: $white_color;
+      border: 0;
+      color: $gray_color;
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    span {
+      margin: 0 6px;
+      text-transform: uppercase;
+      font-family: $font_1;
+    }
+
+    .tnw-2020 {
+      span {
+        &:nth-of-type(1) {
+          font-size: 20px;
+        }
+
+        &:nth-of-type(2) {
+          font-size: 16px;
+          margin-right: 10px;
+          color: $gray_color;
+        }
+      }
+
+      img {
+        height: 14px;
+      }
+
+      @include hide_on('big_screen');
+    }
+
+    .search {
+      i {
+        font-size: 17px;
+      }
+    }
+
+    .get-ticket-btn {
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color: $btn_color;
+      color: $white_color;
+      border-radius: 3px;
+      font-size: 12px;
+      padding: 6px 20px;
+      transition: all 0.3s ease-in-out;
+
+      @include hide_on('big_screen');
+
+      &:hover {
+        background-color: $btn_hover_color;
+      }
+    }
+
+    .menu-btn {
+      display: none;
+      color: $accent_color;
+
+      @include show_on('tab_screen');
+    }
+  }
+
+  .sm-screen-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    right: -100%;
+    // display: none;
+    background: $menu_background;
+    z-index: 900;
+
+    .header {
+      border-bottom: 1px solid $border_color;
+      height: 50px;
+      align-items: center;
+      padding-right: 15px;
+      justify-content: flex-end;
+
+      .close {
+        color: $white_color;
+        background-color: transparent;
+        border: 0;
+        font-size: 20px;
+      }
+    }
+
+    .social {
+      border-bottom: 1px solid $border_color;
+      min-height: 70px;
+      align-items: center;
+      padding: 0 20px;
+
+      ul {
+        li {
+          margin: 20px;
+          float: left;
+
+          .link_social {
+            color: $white_color;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 40px 30px;
+
+      .title {
+        color: $white_color;
+        font-family: $font_1;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+
+      ul {
+        margin: 10px 0 20px 0;
+      }
+
+      .link {
+        color: $border_color;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: $font_1;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .nav-bar-status {
+    background-color: $status_color;
+    padding: 5px 20px;
+    font-size: 14px;
+
+    @include breakpoint($sm_screen) {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .join-online {
+      color: $gray_color_1;
+    }
+  }
+}

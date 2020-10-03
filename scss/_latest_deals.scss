@@ -1,0 +1,148 @@
+.lastest-deals {
+  padding-top: 70px;
+  margin-bottom: 100px;
+
+  .header {
+    margin: 0 15px 20px 15px;
+    align-items: center;
+
+    a {
+      align-items: center;
+      font-size: 15px;
+      color: $accent_color;
+      font-family: $font_2;
+      transition: all 0.3s ease-in-out;
+
+      i {
+        font-size: 22px;
+        margin-left: 10px;
+      }
+
+      &:hover {
+        color: $black_color;
+      }
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .deals-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .item {
+      margin: 15px;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+
+        @include breakpoint($tab_screen) {
+          width: 100px;
+        }
+      }
+
+      .title {
+        color: $gray_color_1;
+        font-size: 11px;
+        font-weight: 600;
+        font-family: $font_2;
+
+        h2 {
+          @include breakpoint($tab_screen) {
+            margin: 0 10px;
+            font-size: 15px;
+          }
+
+          @include breakpoint($sm_screen) {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .info {
+        align-items: center;
+
+        span {
+          font-family: $font_1;
+          color: $gray_color;
+          margin-right: 10px;
+
+          @include breakpoint($tab_screen) {
+            margin: 0 10px;
+          }
+
+          @include breakpoint($sm_screen) {
+            font-size: 15px;
+          }
+        }
+
+        .old-price {
+          position: relative;
+
+          .line {
+            width: 33px;
+            position: absolute;
+            border-bottom: 2px solid $gray_color;
+            top: 9px;
+
+            @include breakpoint($tab_screen) {
+              left: 12px;
+            }
+
+            @include breakpoint($tab_screen) {
+              width: 20px;
+            }
+          }
+        }
+
+        .current-price {
+          color: $gray_color_1;
+          font-size: 18px;
+        }
+      }
+
+      .off {
+        background-color: $status_color;
+        position: absolute;
+        width: 200px;
+        height: 70px;
+        top: -10px;
+        right: -90px;
+        transform: rotate(45deg);
+
+        span {
+          position: absolute;
+          bottom: 10px;
+          left: 60px;
+          font-size: 12px;
+          font-family: $font_2;
+          color: $black_color;
+        }
+
+        @include hide_on("tab_screen");
+      }
+
+      @include breakpoint($tab_screen) {
+        display: flex;
+      }
+    }
+
+    @include breakpoint($lg_screen) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint($tab_screen) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include breakpoint($sm_screen) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

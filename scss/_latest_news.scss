@@ -1,0 +1,95 @@
+.lastest-news {
+  padding-top: 80px;
+
+  .header {
+    margin: 0 0 20px 15px;
+
+    a {
+      align-items: center;
+      font-size: 15px;
+      color: $accent_color;
+      font-family: $font_2;
+      transition: all 0.3s ease-in-out;
+
+      i {
+        font-size: 22px;
+        margin-left: 10px;
+      }
+
+      &:hover {
+        color: $black_color;
+      }
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .news-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .item {
+      padding: 15px;
+      box-sizing: border-box;
+
+      img {
+        width: 100%;
+
+        @include breakpoint($tab_screen) {
+          width: 100px;
+        }
+      }
+
+      .title {
+        color: $gray_color_1;
+        font-size: 11px;
+        font-weight: 600;
+        font-family: $font_2;
+
+        h2 {
+          @include breakpoint($tab_screen) {
+            margin: 0 10px;
+          }
+
+          @include breakpoint($sm_screen) {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .info {
+        span {
+          font-family: $font_1;
+          color: $gray_color;
+
+          @include breakpoint($tab_screen) {
+            margin: 0 10px;
+          }
+
+          @include breakpoint($sm_screen) {
+            font-size: 10px;
+          }
+        }
+      }
+
+      @include breakpoint($tab_screen) {
+        display: flex;
+      }
+    }
+
+    @include breakpoint($lg_screen) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpoint($tab_screen) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include breakpoint($sm_screen) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

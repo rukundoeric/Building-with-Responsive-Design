@@ -1,0 +1,26 @@
+$black_color: #131313;
+$white_color: #fdfdfd;
+$gray_color: #9b9b9b;
+$gray_color_1: #272727;
+$gray_color_2: #5b5b5b;
+$gray_color_3: #131313;
+$accent_color: #f42;
+$accent_color_1: #ffebe8;
+$accent_color_2: #fffaf8;
+$status_color: #fd3;
+$border_color: rgb(214, 214, 214);
+$btn_color: rgb(0, 218, 218);
+$btn_hover_color: #90cc;
+$btn_hover_color_2: #c09;
+$font_1: 'Rajdhani', sans-serif;
+$font_2: 'Balsamiq Sans', cursive, sans-serif;
+
+$menu_background: linear-gradient(to bottom right, $btn_hover_color_2, $accent_color 85%);
+
+$xl_screen: "(min-width: 1200px)";
+$big_screen: "(max-width: 1200px)";
+$lg_screen: "(max-width: 1023px)";
+$md_screen : "(max-width: 812px)";
+$tab_screen: "(max-width: 767px)";
+$sm_screen: "(max-width: 576px)";
+$xs_screen: "(max-width: 420px)";
