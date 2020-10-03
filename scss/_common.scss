@@ -87,16 +87,22 @@ a {
 
   @include breakpoint($sm_screen) {
     width: 100%;
-    padding: 0 !important;
+    padding: 0;
   }
 
   @include breakpoint($md_screen) {
     width: 100%;
-    padding: 0 20px;
+    padding: 0;
   }
 
   @include breakpoint($lg_screen) {
-    max-width: 923px;
+    width: 100%;
+    padding: 0;
+  }
+
+  @include breakpoint($big_screen) {
+    width: 100%;
+    padding: 0;
   }
 
   @include breakpoint($xl_screen) {

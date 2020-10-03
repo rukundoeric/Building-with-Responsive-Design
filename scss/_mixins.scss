@@ -5,6 +5,12 @@
     }
   }
 
+  @else if $screen == "big_screen" {
+    @media #{$big_screen} {
+      display: none;
+    }
+  }
+
   @else if $screen == "lg_screen" {
     @media #{$lg_screen} {
       display: none;

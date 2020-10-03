@@ -71,14 +71,19 @@ a {
   @media (max-width: 576px) {
     .container {
       width: 100%;
-      padding: 0 !important; } }
+      padding: 0; } }
   @media (max-width: 812px) {
     .container {
       width: 100%;
-      padding: 0 20px; } }
+      padding: 0; } }
+  @media (max-width: 1023px) {
+    .container {
+      width: 100%;
+      padding: 0; } }
   @media (max-width: 1200px) {
     .container {
-      max-width: 923px; } }
+      width: 100%;
+      padding: 0; } }
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
@@ -99,7 +104,7 @@ a {
   background-color: #131313;
   color: #9b9b9b;
   box-sizing: content-box; }
-  @media (max-width: 785px) {
+  @media (max-width: 767px) {
     .nav-bar .nav-bar-sub-links {
       display: none; } }
   .nav-bar .nav-bar-sub-links a {
@@ -142,7 +147,7 @@ a {
       transition: all 0.5s ease-in-out; }
       .nav-bar .nav-bar-menu .menu-links a:hover {
         color: #131313; }
-    @media (max-width: 785px) {
+    @media (max-width: 767px) {
       .nav-bar .nav-bar-menu .menu-links {
         display: none; } }
   .nav-bar .nav-bar-menu button {
@@ -185,7 +190,7 @@ a {
   .nav-bar .nav-bar-menu .menu-btn {
     display: none;
     color: #f42; }
-    @media (max-width: 785px) {
+    @media (max-width: 767px) {
       .nav-bar .nav-bar-menu .menu-btn {
         display: block; } }
 .nav-bar .sm-screen-menu {
@@ -250,7 +255,7 @@ a {
   box-sizing: content-box;
   display: grid;
   grid-template-columns: 65% 35%; }
-  @media (max-width: 785px) {
+  @media (max-width: 767px) {
     .banner {
       grid-template-columns: 100%; } }
   .banner .artile-link {
@@ -268,13 +273,13 @@ a {
     background-repeat: "no-repeat, no-repeat";
     box-sizing: border-box;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.666), black), linear-gradient(to bottom right, rgba(255, 67, 34, 0.612) 50%, black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sick-leave-employee-wfh-gq-796x417.png"); }
-    @media (max-width: 1200px) {
+    @media (max-width: 1023px) {
       .banner .main-article {
         height: 70vh; } }
     @media (max-width: 812px) {
       .banner .main-article {
         height: 400px; } }
-    @media (max-width: 785px) {
+    @media (max-width: 767px) {
       .banner .main-article {
         height: 35vh; } }
     .banner .main-article .logo {
@@ -282,7 +287,7 @@ a {
       width: 400px;
       top: 30px;
       left: 30px; }
-      @media (max-width: 1200px) {
+      @media (max-width: 1023px) {
         .banner .main-article .logo {
           display: none; } }
     .banner .main-article .header {
@@ -305,7 +310,7 @@ a {
         @media (max-width: 812px) {
           .banner .main-article .header h1 {
             font-size: 35px; } }
-        @media (max-width: 785px) {
+        @media (max-width: 767px) {
           .banner .main-article .header h1 {
             font-size: 20px; } }
       .banner .main-article .header .actions {
@@ -407,7 +412,7 @@ a {
       box-sizing: border-box; }
       .lastest-news .news-list .item img {
         width: 100%; }
-        @media (max-width: 785px) {
+        @media (max-width: 767px) {
           .lastest-news .news-list .item img {
             width: 100px; } }
       .lastest-news .news-list .item .title {
@@ -415,7 +420,7 @@ a {
         font-size: 11px;
         font-weight: 600;
         font-family: "Balsamiq Sans", cursive, sans-serif; }
-        @media (max-width: 785px) {
+        @media (max-width: 767px) {
           .lastest-news .news-list .item .title h2 {
             margin: 0 10px; } }
         @media (max-width: 576px) {
@@ -424,19 +429,19 @@ a {
       .lastest-news .news-list .item .info span {
         font-family: "Rajdhani", sans-serif;
         color: #9b9b9b; }
-        @media (max-width: 785px) {
+        @media (max-width: 767px) {
           .lastest-news .news-list .item .info span {
             margin: 0 10px; } }
         @media (max-width: 576px) {
           .lastest-news .news-list .item .info span {
             font-size: 10px; } }
-      @media (max-width: 785px) {
+      @media (max-width: 767px) {
         .lastest-news .news-list .item {
           display: flex; } }
-    @media (max-width: 1200px) {
+    @media (max-width: 1023px) {
       .lastest-news .news-list {
         grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 785px) {
+    @media (max-width: 767px) {
       .lastest-news .news-list {
         grid-template-columns: repeat(1, 1fr); } }
     @media (max-width: 576px) {
@@ -462,27 +467,27 @@ a {
     .latest-funding .header ul .link {
       font-size: 13px;
       padding: 0 10px; }
-      @media (max-width: 785px) {
+      @media (max-width: 767px) {
         .latest-funding .header ul .link {
           padding: 0 10px 0 0;
           border: 0; } }
     .latest-funding .header ul li:nth-of-type(1) .link, .latest-funding .header ul li:nth-of-type(2) .link {
       border-right: 2px solid #f42; }
-      @media (max-width: 785px) {
+      @media (max-width: 767px) {
         .latest-funding .header ul li:nth-of-type(1) .link, .latest-funding .header ul li:nth-of-type(2) .link {
           margin-top: 10px;
           border: 0; } }
-    @media (max-width: 785px) {
+    @media (max-width: 767px) {
       .latest-funding .header ul li {
         border: 0; } }
-    @media (max-width: 785px) {
+    @media (max-width: 767px) {
       .latest-funding .header ul {
         display: flex;
         flex-direction: column; } }
     .latest-funding .header h2 {
       margin: 0;
       padding: 0; }
-    @media (max-width: 785px) {
+    @media (max-width: 767px) {
       .latest-funding .header {
         display: block; } }
   .latest-funding .fundings-list {
@@ -505,7 +510,7 @@ a {
           color: #fdfdfd;
           font-family: "Balsamiq Sans", cursive, sans-serif;
           padding-left: 90px; }
-          @media (max-width: 785px) {
+          @media (max-width: 767px) {
             .latest-funding .fundings-list .item .hd .title h2 h2 {
               margin: 0 10px;
               font-size: 15px; } }
@@ -546,10 +551,13 @@ a {
           color: #272727; }
           .latest-funding .fundings-list .item .info .link-1:hover {
             color: #9b9b9b; }
-    @media (max-width: 1200px) {
+      @media (max-width: 1023px) {
+        .latest-funding .fundings-list .item:nth-of-type(1) {
+          display: none; } }
+    @media (max-width: 1023px) {
       .latest-funding .fundings-list {
         grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 785px) {
+    @media (max-width: 767px) {
       .latest-funding .fundings-list {
         grid-template-columns: repeat(1, 1fr); } }
     @media (max-width: 576px) {
@@ -560,9 +568,12 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 70px; }
-  @media (max-width: 785px) {
+  @media (max-width: 1023px) {
     .orthers {
       grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 767px) {
+    .orthers {
+      grid-template-columns: repeat(1, 1fr); } }
   @media (max-width: 576px) {
     .orthers {
       grid-template-columns: repeat(1, 1fr); } }
@@ -601,9 +612,18 @@ a {
     background-repeat: "no-repeat, no-repeat";
     box-sizing: border-box;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.666), black), linear-gradient(to bottom right, rgba(0, 0, 0, 0.265) 50%, black), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-01.jpg"); }
-    @media (max-width: 812px) {
+    @media (max-width: 767px) {
       .orthers .most-popular {
-        height: 200px; } }
+        height: 400px; } }
+    @media (max-width: 576px) {
+      .orthers .most-popular {
+        height: 300px; } }
+    @media (max-width: 576px) {
+      .orthers .most-popular {
+        height: 300px; } }
+    @media (max-width: 1023px) {
+      .orthers .most-popular {
+        height: 400px; } }
     .orthers .most-popular .header {
       width: 80%;
       position: absolute;
@@ -669,8 +689,8 @@ a {
       width: 94%; }
       .orthers .more .more-l .li-more {
         color: #f42;
-        list-style: disc !important;
-        list-style-position: inherit !important;
+        list-style: disc;
+        list-style-position: inherit;
         margin: 10px 0;
         padding-bottom: 10px;
         border-bottom: 0.2px solid #d6d6d6; }
@@ -708,7 +728,7 @@ a {
       overflow: hidden; }
       .lastest-deals .deals-list .item img {
         width: 100%; }
-        @media (max-width: 785px) {
+        @media (max-width: 767px) {
           .lastest-deals .deals-list .item img {
             width: 100px; } }
       .lastest-deals .deals-list .item .title {
@@ -716,7 +736,7 @@ a {
         font-size: 11px;
         font-weight: 600;
         font-family: "Balsamiq Sans", cursive, sans-serif; }
-        @media (max-width: 785px) {
+        @media (max-width: 767px) {
           .lastest-deals .deals-list .item .title h2 {
             margin: 0 10px;
             font-size: 15px; } }
@@ -729,7 +749,7 @@ a {
           font-family: "Rajdhani", sans-serif;
           color: #9b9b9b;
           margin-right: 10px; }
-          @media (max-width: 785px) {
+          @media (max-width: 767px) {
             .lastest-deals .deals-list .item .info span {
               margin: 0 10px; } }
           @media (max-width: 576px) {
@@ -742,14 +762,14 @@ a {
             position: absolute;
             border-bottom: 2px solid #9b9b9b;
             top: 9px; }
-            @media (max-width: 785px) {
+            @media (max-width: 767px) {
               .lastest-deals .deals-list .item .info .old-price .line {
                 left: 12px; } }
-            @media (max-width: 785px) {
+            @media (max-width: 767px) {
               .lastest-deals .deals-list .item .info .old-price .line {
                 width: 20px; } }
         .lastest-deals .deals-list .item .info .current-price {
-          color: #272727 !important;
+          color: #272727;
           font-size: 18px; }
       .lastest-deals .deals-list .item .off {
         background-color: #fd3;
@@ -766,16 +786,16 @@ a {
           font-size: 12px;
           font-family: "Balsamiq Sans", cursive, sans-serif;
           color: #131313; }
-        @media (max-width: 785px) {
+        @media (max-width: 767px) {
           .lastest-deals .deals-list .item .off {
             display: none; } }
-      @media (max-width: 785px) {
+      @media (max-width: 767px) {
         .lastest-deals .deals-list .item {
           display: flex; } }
-    @media (max-width: 1200px) {
+    @media (max-width: 1023px) {
       .lastest-deals .deals-list {
         grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 785px) {
+    @media (max-width: 767px) {
       .lastest-deals .deals-list {
         grid-template-columns: repeat(1, 1fr); } }
     @media (max-width: 576px) {

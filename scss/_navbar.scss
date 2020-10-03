@@ -101,15 +101,13 @@
         height: 14px;
       }
 
-      @include hide_on('lg_screen');
+      @include hide_on('big_screen');
     }
 
     .search {
       i {
         font-size: 17px;
       }
-
-      // @include hide_on('tab_screen');
     }
 
     .get-ticket-btn {
@@ -122,7 +120,7 @@
       padding: 6px 20px;
       transition: all 0.3s ease-in-out;
 
-      @include hide_on('lg_screen');
+      @include hide_on('big_screen');
 
       &:hover {
         background-color: $btn_hover_color;

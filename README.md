@@ -9,6 +9,7 @@
 
 - HTML
 - CSS3
+- SASS
 - Fontawesome
 
 ## Live Demo

@@ -18,8 +18,9 @@ $font_2: 'Balsamiq Sans', cursive, sans-serif;
 $menu_background: linear-gradient(to bottom right, $btn_hover_color_2, $accent_color 85%);
 
 $xl_screen: "(min-width: 1200px)";
-$lg_screen: "(max-width: 1200px)";
+$big_screen: "(max-width: 1200px)";
+$lg_screen: "(max-width: 1023px)";
 $md_screen : "(max-width: 812px)";
-$tab_screen: "(max-width: 785px)";
+$tab_screen: "(max-width: 767px)";
 $sm_screen: "(max-width: 576px)";
 $xs_screen: "(max-width: 420px)";

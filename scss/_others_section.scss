@@ -3,8 +3,16 @@
   grid-template-columns: repeat(3, 1fr);
   margin-top: 70px;
 
-  @include breakpoint($tab_screen) {
+  @include breakpoint($lg_screen) {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  // @include breakpoint($md_screen) {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+
+  @include breakpoint($tab_screen) {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   @include breakpoint($sm_screen) {
@@ -16,7 +24,6 @@
     box-sizing: border-box;
 
     .header-sec {
-      // margin: 0 0 20px 15px;
       align-items: center;
 
       a {
@@ -65,8 +72,20 @@
     height: 35vh;
     margin-top: 20px;
 
-    @include breakpoint($md_screen) {
-      height: 200px;
+    @include breakpoint($tab_screen) {
+      height: 400px;
+    }
+
+    @include breakpoint($sm_screen) {
+      height: 300px;
+    }
+
+    @include breakpoint($sm_screen) {
+      height: 300px;
+    }
+
+    @include breakpoint($lg_screen) {
+      height: 400px;
     }
 
     .header {
@@ -174,8 +193,8 @@
 
       .li-more {
         color: $accent_color;
-        list-style: disc !important;
-        list-style-position: inherit !important;
+        list-style: disc;
+        list-style-position: inherit;
         margin: 10px 0;
         padding-bottom: 10px;
         border-bottom: 0.2px solid $border_color;
